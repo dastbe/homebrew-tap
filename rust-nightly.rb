@@ -7,7 +7,7 @@ class RustNightly < Formula
    conflicts_with 'rust', :because => 'it is the same the binary'
 
    def install
-      args = ['--prefix='prefix]
+      args = ["--prefix=#{prefix}"]
       system './install.sh', *args
    end
 

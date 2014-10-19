@@ -7,7 +7,7 @@ class CargoNightly < Formula
    depends_on 'rust-nightly'
 
    def install
-      args = ['--prefix='prefix]
+      args = ["--prefix=#{prefix}"]
       system './install.sh', *args
    end
 
